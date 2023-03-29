@@ -1,0 +1,581 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+ }
+
+ .heading {
+    background: url(/assests/heading-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+  }
+  
+  .heading h1 {
+    color: White;
+    font-size: 4rem;
+  }
+  
+  .heading p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #666;
+  }
+  
+  .heading p a {
+    color: White;
+    padding-right: .5rem;
+  }
+  
+  .heading p a:hover {
+    color: #bac34e;
+  }
+
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    color: #222;
+  }
+  
+  .title span {
+    color: green;
+    padding-left: .7rem;
+  }
+  
+  .title a {
+    margin-left: auto;
+    color: #666;
+    font-size: 1.5rem;
+  }
+  
+  .title a:hover {
+    color: green;
+  }
+  section {
+    padding: 3rem 9%;
+  }
+
+ body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+ 
+ a,a:hover{
+    text-decoration: none;
+ }
+ .top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    background: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+ }
+ .top-bar span{
+    color: #fff;
+
+ }
+ .top-bar ul{
+    list-style: none;
+    display: flex;
+ }
+ .top-bar li{
+    margin: 0px 5px;
+ }
+.top-bar a{
+    color: #fff;
+}
+.top-bar a:hover{
+    color: #222;
+}
+
+nav{
+    background: black;
+    padding: 15px 30px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+
+}
+
+nav a{
+    color: #fff;
+}
+nav a:hover{
+    color: green;
+}
+
+.logo {
+    flex: 1;
+    
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color: #fff;
+}
+
+.logo img{
+    width: 120px;
+    margin-right: 10px;
+    
+}
+
+
+/* back ground-1 */
+.background-1 img{
+    width: 100%;
+    flex: 1;
+    background-size: 50%;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: auto 0;
+    flex: 3;
+    
+}
+
+.menu li{
+    padding: 15px 20px;
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width: 100%) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+}
+
+.menu{
+    margin-top: 15px;
+    display: center;
+}
+
+/* slider */
+img {
+  display: block;
+  max-width: 100%;
+}
+.image-slider {
+  padding-bottom: 50px;
+}
+.image {
+  height: 400px;
+  margin-bottom: 20px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.image-title {
+  font-size: 20px;
+  color: #8e8fb5;
+}
+.slick-initialized .slick-slide {
+  margin: 0 0px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1;
+  z-index: 5;
+  transition: all 0.2s linear;
+}
+.slick-arrow:hover {
+  background-color: #2cccff;
+  color: white;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.slick-dots .slick-active button {
+  background-color: #2cccff;
+}
+
+/* cong */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: green;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.Copyright{
+    background-color: green;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px) {
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+/* bien */
+h3 {
+    color: coral;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+    
+
+.body-img-1{
+    display: flex;
+    justify-content: center;
+    
+}
+.card-1{
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 50px;
+}
+.class-image-1{
+    height: 500px;
+    margin-bottom: 15px;
+    background-size: cover;
+    width: 400px;
+    margin-left: 300px;
+}
+.text-body-1{
+    line-height: 1.3em;
+    margin: 20px 300px 0px 400px;
+    color: black;
+    font-size: 23px;
+    padding: 0px 100px 100px 100px;
+    
+}
+.our-story-img{
+    background-image: url('/assests/body\ img\ 1.png')
+    
+}
+/* contact us */
+.contact-us{
+    text-align:center;
+    padding-bottom: 30px;
+    background-color: rgb(168,168,50);
+    padding: 30px;
+}
+.contact-us h1{
+    margin: 30px;
+    font-size: 35px;
+
+}
+.contact-us p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.contact-us a{
+    color: orange;
+    background-color: white;
+    padding: 8px;
+    border: solid;
+    border-radius: 15px;
+}
+
+/* contact map */
+.contact_map p{
+    font-size: 30px;
+    padding: 30px;
+}
+/* an */
+.body-img-2{
+    display: flex;
+    justify-content: center;
+    background-image: url('https://pacificspice.com/wp-content/uploads/2019/11/QualityBG-1600x780.jpg');
+    background-size: cover;
+    
+}
+.card{
+    background: white;
+    width: 270px;
+    margin: 60px;
+    /* border-radius: 15px; */
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+.card-image{
+    
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    /* border-radius: 15px 15px 0 0; */
+
+}
+
+.img-1{
+    background-image: url('https://i1.wp.com/pixahive.com/wp-content/uploads/2021/04/Farmer-crop-harvesting-in-the-farm-405760-pixahive.jpg?fit=2560%2C1706&ssl=1')
+}
+.img-2{
+    background-image: url('https://www.pngitem.com/pimgs/m/663-6633967_iso-9000-hd-png-download.png')
+}
+.img-3{
+    background-image: url('https://www.epicor.com/globalassets/uploadedimages/shared/open-graph-images/og-distribution.png')
+}
+/* product page css */
+.category .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 0;
+  }
+  
+  .category .box-container .box {
+    text-align: center;
+  }
+  
+  .category .box-container .box img {
+    height: 15rem;
+  }
+  
+  .category .box-container .box h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #666;
+  }
+  
+  .category .box-container .box:hover h3 {
+    color: #bac34e;
+  }
+  
+  .products .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .products .box-container .box {
+    position: relative;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .products .box-container .box:hover .icons {
+    top: 0;
+  }
+  
+  .products .box-container .box .icons {
+    position: absolute;
+    top: -105%;
+    left: 0;
+    height: 30rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: rgba(243, 243, 243, 0.8);
+    gap: 1rem;
+  }
+  
+  .products .box-container .box .icons a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    color: #666;
+  }
+  
+  .products .box-container .box .icons a:hover {
+    background: #bac34e;
+    color: white;
+  }
+  
+  .products .box-container .box .image {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .products .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .products .box-container .box .content {
+    padding: 1.5rem;
+  }
+  
+  .products .box-container .box .content h3 {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .products .box-container .box .content .price {
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  
+  .products .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: yellowgreen;
+  }
+
+  
